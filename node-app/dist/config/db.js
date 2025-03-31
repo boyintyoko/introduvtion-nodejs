@@ -21,5 +21,6 @@ const dbConnection = () => {
         }
         console.log("MySQLに接続しました");
     });
+    return connection;
 };
 exports.dbConnection = dbConnection;

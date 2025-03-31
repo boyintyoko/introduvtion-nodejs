@@ -1,9 +1,9 @@
 import app from "./server";
 import { dbConnection } from "./config/db";
 import { bootServer } from "./server";
-import root from "./routes/root";
+import { session } from "./routes/session";
 
 bootServer();
 dbConnection();
 
-app.use("/root", root);
+app.use("/session", session);
